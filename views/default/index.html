@@ -1,0 +1,253 @@
+<!-- copyright by w3schools, http://www.w3schools.com/w3css/tryw3css_templates_architect.htm -->
+{{extend 'layout.html'}}
+
+{{block head}}
+<script src="{{=URL('static', 'js/vue.js')}}"></script>
+<script>
+    var add_post_url = "{{=URL('api', 'add_post', user_signature=True)}}";
+    var posts_url = "{{=URL('api', 'get_posts')}}";
+
+</script>
+
+
+<script>
+    function produce_upload_url(files) {
+        return APP.upload_url;
+    }
+
+</script>
+{{end}}
+
+
+<head>
+    <style>
+        #head {
+            color: white;
+            font-size: larger;
+        }
+
+        .video-container iframe, .video-container object, .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<html>
+<title>Pre-Engineering Summer Program at St. Mary's University</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+
+<div class="w3-top">
+    <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+        <li>
+            <a class="w3-margin-left" ; href=" http://www.stmarytx.edu/"><b><img style="width: 25px; height: 25px;"
+                                                                                 src="https://s3-us-west-2.amazonaws.com/asset.plexuss.com/college/logos/St_Marys_University.png"
+                                                                                 alt=""> </b> St.Mary's University</a>
+        </li>
+        <li class="w3-right w3-hide-small">
+            <a href="http://cl.stmarytx.edu/esp/brochure.pdf" class="w3-left">Brochure</a>
+            <a href="https://www.stmarytx.edu/academics/department/engineering/" class="w3-left">Engineering
+                Department</a>
+            <a href="https://www.stmarytx.edu/outreach/summer-camps/robotics-and-java-camp/"
+               class="w3-left w3-margin-right">Application Form</a>
+        </li>
+    </ul>
+</div>
+
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:2000px;" id="home">
+    <img class="w3-image"
+         src="http://rcysl.com/wp-content/uploads/2016/12/Blue-Hd-Wallpapers-HD-Collection.jpg"
+         alt="Pre-Engineering Summer Program at St. Mary's University" style="width:100%;height: 400px">
+    <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 id="head" class="w3-xxlarge"><span>Pre-Engineering Summer Program</span> <span
+                class="w3-hide-small"> -- St. Mary's University</span>
+        </h1>
+    </div>
+</header>
+
+
+<!--About -->
+<div class="w3-content w3-padding  " style="max-width:1100px ">
+    <div class="w3-container w3-padding-32" id="about">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-8">About</h3>
+        <p>The Pre-Engineering Robotics and Java Programming Summer Program at St. Mary's University is designed to
+            teach middle school and high school students to learn robotics, JAVA programming, and operations research.
+            <span style="background-color:#ffff80">We will offer four two-week camps (<strong style="color:#ff0000">for commuters only</strong>) in the summer of 2017 on St. Mary's campus. The camp time is from 8:30am to 4pm. The camp is free of charge for accepted applicants.</span>
+            A decision on the
+            application will be made toward the end of April or early May 2017. Thanks a lot for your patience.
+        </p>
+        <p>
+                   <span style="background-color:#ffff80"><span style="background-color:#ffff80"></span><strong
+                           style="color:#ff0000">Note: To receive further announcements about
+                   this program, please join its mailing list by visiting:<a
+                               href="http://mailhide.recaptcha.net/d?k=01iTHYKq0gMvmiEmjZceWULw==&amp;c=3sO8Z4dliOxu-iR-sDzi_OzQkcPQydYFdikdrlD0KHHLv0wjBFy0nuKAvZulfkRv"
+                               target="_blank"> Here</a> </strong></span>
+        </p>
+    </div>
+
+
+    <div class="w3-content w3-padding  " style="max-width:1100px ">
+
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-8">Projects</h3>
+        <p>The following two videos demonstrate two of our students' projects: a rubik's cube solver using a Mindstorm
+            NXT robot and a video game developed for Android mobile devices using JAVA programming language.</p>
+        <div class="w3-col l6 m6">
+            <!-- Video entries -->
+            <!-- First Video entries -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-container">
+                    <object>
+                        <param name="movie" value="http://www.youtube.com/v/NMYqOUVZ3V4&amp;hl=en_US&amp;fs=1&amp;">
+                        <param name="allowFullScreen" value="true">
+                        <param name="allowscriptaccess" value="always">
+                        <embed src="http://www.youtube.com/v/NMYqOUVZ3V4&amp;hl=en_US&amp;fs=1&amp;"
+                               type="application/x-shockwave-flash"
+                               height="385" width="450">
+                    </object>
+                    <h3><b> A rubik's cube solver using a Mindstorm NXT robot</b></h3>
+                    <div class="w3-row">
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- First Video entries -->
+        <div class="w3-col l6 m6">
+            <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-container">
+                    <object>
+                        <param name="movie" value="http://www.youtube.com/v/NMYqOUVZ3V4&amp;hl=en_US&amp;fs=1&amp;">
+                        <param name="allowFullScreen" value="true">
+                        <param name="allowscriptaccess" value="always">
+                        <embed src="http://www.youtube.com/v/NMYqOUVZ3V4&amp;hl=en_US&amp;fs=1&amp;"
+                               type="application/x-shockwave-flash"
+                               height="385" width="450">
+                    </object>
+                    <h3><b> A rubik's cube solver using a Mindstorm NXT robot</b></h3>
+                    <div class="w3-row">
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- Professor Section -->
+        <div class="w3-content w3-padding  " style="max-width:1100px ">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-8">Program Director</h3>
+            <div class="w3-row-padding">
+                <div class="w3-col l6 m6 w3-margin-bottom ">
+                    <img src="https://www.stmarytx.edu/wp-content/uploads/2016/06/SET-faculty-wenbin-luo.jpg"
+                         style="width:70%;height: 40%"
+                         alt="profile icon"></i>
+                    <h3>Dr. Wenbin Luo, Program Director</h3>
+                    <td style="text-align: left; width: 330px;" height="19"><span style="font-family: Times New Roman;"><br>
+                        Professor<br>
+                        Engineering Department<br>
+                        St. Mary's University<br>
+                        San Antonio, TX 78228<br>
+                        <br>
+                        Email: <a
+                                href="http://mailhide.recaptcha.net/d?k=01aefe705BfaIowg6wuoTZkQ==&amp;c=31iT-J-Qj3wbr_gkGbvcGYOiGFUcrPFqbRonE1iE5qk="
+                                target="_blank">click here</a> <br>
+                        Tel: (210) 431-5002</span></td>
+                </div>
+
+                <div class="w3-col l6 m6 w3-margin-bottom ">
+                    <img src="https://www.stmarytx.edu/wp-content/uploads/2016/05/faculty-ozgur-aktunc-1.jpg"
+                         style="width:70%;height: 40%"
+                         alt="profile icon"></i>
+                    <h3>Dr. Ozgur Aktunc, Program Co-Director</h3>
+                    <td style="width: 330px;" align="left" height="19"><p align="left"><span
+                            style="font-family: Times New Roman;"><br>
+                            Associate Professor<br>
+                            Engineering Department<br>
+                            St. Mary's University<br>
+                            San Antonio, TX 78228<br>
+                            <br>
+                            Email: <a
+                                href="http://mailhide.recaptcha.net/d?k=01gVmrYGqp67bAM3p2HupRfg==&amp;c=bEaeqnHtfQWV5yoh27gfW8d5L8ju1FQtN6Lps3JBdUQ="
+                                target="_blank">click here</a> <br>
+                            Tel: (210) 431-2052</span></p>
+                    </td>
+                </div>
+            </div>
+
+            <!-- Application Section -->
+            <div class="w3-container w3-padding-32" id="application">
+                <div class="wrapper">
+                    <div id="vue-div" style="display:none">
+                        <div class="button_bar">
+                            <button v-if="!is_adding_post" class="w3-btn w3-section"
+                                    v-on:click="add_post_button()">
+                                <span style="font-weight:bold; font-size: large">Apply To Attend</span>
+                            </button>
+                        </div>
+
+
+                        <div v-if="is_adding_post" id="add_post_div">
+                            <form action="#" v-on:submit.prevent="add_post" class="form-horizontal"
+                                  enctype="multipart/form-data" method="post">
+                                <div class="form-group" id="add-new-post">
+                                    <div>
+                                        <br>
+
+                                        <textarea class="w3-input w3-section" v-model="form_first_name"
+                                                  placeholder="First Name"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_last_name"
+                                                  placeholder="Last Name"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_birthday"
+                                                  placeholder="Birthday mm/dd/yy"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_mailing"
+                                                  placeholder="Mailing Address"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_email"
+                                                  placeholder="Email"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_phone"
+                                                  placeholder="Phone"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_school"
+                                                  placeholder="School"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_gpa"
+                                                  placeholder="GPA"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_emergency"
+                                                  placeholder="Emergency Contactor"></textarea>
+                                        <textarea class="w3-input w3-section" v-model="form_teacher"
+                                                  placeholder="Teacher/Instructor"></textarea>
+                                    </div>
+                                    <div class="post_listing" id="submit_record__row">
+                                        <div>
+                                           <input class="post-button, w3-btn w3-section" id="add_post_submit" type="submit"
+                                                                                                    value="Submit"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <button v-if="is_adding_post" class="btn btn-warning btn-sm, w3-btn w3-section" v-on:click="add_post_button()">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+<script src="{{=URL('static', 'js/default_index.js')}}"></script>
